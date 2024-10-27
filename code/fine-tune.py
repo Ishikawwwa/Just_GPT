@@ -33,6 +33,7 @@ trainer = Trainer(
     args=training_args,
     train_dataset=tokenized_dataset['train'],
     data_collator=data_collator,
+    eval_dataset=None,
 )
 
 trainer.train()
